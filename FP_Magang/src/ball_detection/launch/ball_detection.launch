@@ -1,0 +1,10 @@
+<launch>
+  <!-- Menjalankan node image_capture_node -->
+  <node name="image_capture_node" pkg="ball_detection" type="image_capture_node" output="screen"/>
+
+  <!-- Menjalankan node image_processing_node -->
+  <node name="image_processing_node" pkg="ball_detection" type="image_processing_node" output="screen"/>
+
+  <!-- Menjalankan node main_processing_node -->
+  <node name="main_processing_node" pkg="ball_detection" type="main_processing_node" output="screen"/>
+</launch>
